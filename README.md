@@ -1,3 +1,6 @@
+# Sample project for react-native study purpose
+![](/resources/react-native-sample.gif)
+
 ## 1.시작
 ```
  $> react-native init RNSample
@@ -89,7 +92,7 @@ eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-native
 
  참조: [동영상]
 
- ![eslinter](/images/eslinter.jpeg)
+ ![eslinter](/resources/eslinter.jpeg)
 
  [동영상]: https://www.youtube.com/playlist?list=PL9f8_QifuTL4CS8-OyA-4WADhkddOnRS4
 
