@@ -1,4 +1,9 @@
 # Sample project for react-native study purpose
+
+### Based on [ReactNavigation] for Router
+
+[ReactNavigation]: https://reactnavigation.org/
+ 
 ![](/resources/react-native-sample.gif)
 
 ## 1.시작
