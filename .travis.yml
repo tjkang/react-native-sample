@@ -23,6 +23,7 @@ licenses:
   - android-sdk-license-.+
   - google-gdk-license-.+
 script:
+  - ./android/gradlew clean
   - ./android/gradlew assembleRelease --stacktrace --no-daemon
 after_script:
   - ./android/gradlew crashlyticsUploadDistributionRelease
