@@ -56,3 +56,7 @@ fastlane/screenshots
 .env
 
 yarn.lock
+
+ios/main.jsbundle
+
+ios/main.jsbundle.meta
