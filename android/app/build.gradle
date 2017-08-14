@@ -106,16 +106,12 @@ android {
     }
     signingConfigs {
         release {
-            // if (project.hasProperty('RNSAMPLE_RELEASE_STORE_FILE')) {
-            //     storeFile file(RNSAMPLE_RELEASE_STORE_FILE)
-            //     storePassword RNSAMPLE_RELEASE_STORE_PASSWORD
-            //     keyAlias RNSAMPLE_RELEASE_KEY_ALIAS
-            //     keyPassword RNSAMPLE_RELEASE_KEY_PASSWORD
-            // }
-            storeFile file("rn-sample-key.keystore")
-            storePassword "rn-sample-key"
-            keyAlias "rn-sample-key-alias"
-            keyPassword "rn-sample-key"
+            if (project.hasProperty('RNSAMPLE_RELEASE_STORE_FILE')) {
+                storeFile file(RNSAMPLE_RELEASE_STORE_FILE)
+                storePassword RNSAMPLE_RELEASE_STORE_PASSWORD
+                keyAlias RNSAMPLE_RELEASE_KEY_ALIAS
+                keyPassword RNSAMPLE_RELEASE_KEY_PASSWORD
+            }
         }
     }
     buildTypes {
