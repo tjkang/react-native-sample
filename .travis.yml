@@ -39,7 +39,7 @@ script:
   - cd android && ./gradlew clean
   - ./gradlew assembleRelease --stacktrace --no-daemon -Pandroid.injected.signing.store.file=./app/$RNSAMPLE_RELEASE_STORE_FILE -Pandroid.injected.signing.store.password=$RNSAMPLE_RELEASE_STORE_PASSWORD -Pandroid.injected.signing.key.alias=$RNSAMPLE_RELEASE_KEY_ALIAS -Pandroid.injected.signing.key.password=$RNSAMPLE_RELEASE_KEY_PASSWORD
 after_script:
-  - ./gradlew crashlyticsUploadDistributionRelease
+  - ./gradlew assembleRelease crashlyticsUploadDistributionRelease
 branches:
   only:
   - master
