@@ -75,11 +75,10 @@ matrix:
         - node --version
         - travis_retry npm install -g yarn
         - yarn -version
+        - gem install fastlane --no-rdoc --no-ri --no-document --quiet
+        #- gem update fastlane --no-ri --no-rdoc --no-document
       install:
-        - travis_retry gem install xcpretty
         - travis_retry yarn
-      xcode_project: ios/RNSample.xcodeproj
-      xcode_scheme: ios/RNSample
       script:
         - cd ios
-        - xcodebuild clean build -scheme RNSample -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -configuration Release | xcpretty
+        - fastlane beta
