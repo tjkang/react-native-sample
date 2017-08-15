@@ -76,6 +76,8 @@ matrix:
         - travis_retry npm install -g yarn
         - yarn -version
         - gem install fastlane --no-rdoc --no-ri --no-document --quiet
+        - openssl aes-256-cbc -K $encrypted_b6cc45ee0c0c_key -iv $encrypted_b6cc45ee0c0c_iv -in gitlab_deploy_key.enc -out gitlab_deploy_key -d
+        #- gem install bundler
         #- gem update fastlane --no-ri --no-rdoc --no-document
       install:
         - travis_retry yarn
