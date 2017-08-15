@@ -60,3 +60,5 @@ yarn.lock
 ios/main.jsbundle
 
 ios/main.jsbundle.meta
+
+ios/RNSample.app.dSYM.zip
