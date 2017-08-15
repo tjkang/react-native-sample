@@ -1,8 +1,8 @@
-language: node_js
-node_js:
-  - "6.9"
-  - "7.1"
-sudo: false
+#language: node_js
+#node_js:
+#  - "6.9"
+#  - "7.1"
+#sudo: false
 cache:
   yarn: true
   directories:
@@ -10,6 +10,13 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
     - node_modules
+#env:
+#  - NODE_ENV='test'
+#script:
+#  - cp env.example.js env.js
+#  - npm run lint
+#  - npm test
+#  - npm run bundle:ios
 
 branches:
   only:
