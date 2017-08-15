@@ -31,15 +31,6 @@ platform :ios do
   desc "This will also make sure the profile is up to date"
   lane :beta do
 
-  create_keychain(
-      name: ENV["MATCH_KEYCHAIN_NAME"],
-      password: ENV["MATCH_PASSWORD"],
-      default_keychain: true,
-      unlock: true,
-      timeout: 3600,
-      add_to_search_list: true
-    )
-
     match(
       type: "development",
       # readonly: true  #readonly mode to be sure it won't create any new certificates or profiles.
