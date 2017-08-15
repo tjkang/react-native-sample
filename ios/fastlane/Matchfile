@@ -1,4 +1,4 @@
-git_url "git@gitlab.com:tjkang81/rnSample-cert.git"
+git_url "https://gitlab.com/tjkang81/rnSample-cert.git"
 
 type "development" # The default type, can be: appstore, adhoc, enterprise or development
 
