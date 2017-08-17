@@ -33,6 +33,8 @@ platform :ios do
 
     match(
       type: "development",
+      # clone_branch_directly: true,
+      verbose: true,
       # readonly: true  #readonly mode to be sure it won't create any new certificates or profiles.
     )
 
