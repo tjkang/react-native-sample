@@ -31,8 +31,8 @@ platform :android do
       task: "assembleRelease",
       # project_dir: "platforms/android/",
       properties: {
-        'android.useDeprecatedNdk' => true
-        'android.injected.signing.store.file' => ./app/ENV["RNSAMPLE_RELEASE_STORE_FILE"],
+        'android.useDeprecatedNdk' => true,
+        'android.injected.signing.store.file' => './app/ENV["RNSAMPLE_RELEASE_STORE_FILE"]',
         'android.injected.signing.store.password' => ENV["RNSAMPLE_RELEASE_STORE_PASSWORD"],
         'android.injected.signing.key.alias'=> ENV["RNSAMPLE_RELEASE_KEY_ALIAS"],
         'android.injected.signing.key.password' => ENV["RNSAMPLE_RELEASE_KEY_PASSWORD"]
