@@ -62,3 +62,7 @@ ios/main.jsbundle
 ios/main.jsbundle.meta
 
 ios/RNSample.app.dSYM.zip
+
+android/fastlane/README.md
+
+android/fastlane/report.xml
